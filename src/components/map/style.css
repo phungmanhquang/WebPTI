@@ -1,0 +1,23 @@
+.infoBlock {
+	position: fixed;
+	min-width: 320px;
+	height: 120px;
+	background: white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-bottom-right-radius: 40px;
+	box-shadow: 1px 1px 5px 1px;
+}
+img.avata {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.info-detail>p{
+	padding: 3px 0;
+}
+.info-detail>p>span{
+	color: blue;
+}

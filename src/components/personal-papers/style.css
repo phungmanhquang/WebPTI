@@ -1,0 +1,15 @@
+.Form {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+}
+.item {
+	border-bottom: 1px solid gray;
+	padding: 7px;
+	font-size: 20px;
+}
+.main-content {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}

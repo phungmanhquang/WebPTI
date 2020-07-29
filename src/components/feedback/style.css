@@ -1,0 +1,142 @@
+section{
+	background-color: #fcd9bd ;
+	min-height: 100vh;
+	max-height: 100%;
+}
+.Feedback {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 35px;
+}
+
+h3 {
+	font-size: 25px;
+	margin: 15px 0;
+}
+
+.BlockText {
+	border-radius: 10px;
+	padding: 15px;
+	box-shadow: 1px 0px 8px 0px;
+	background: white;
+}
+
+.ContentText p {
+	margin-bottom: 10px;
+	font-size: 20px;
+	text-align: justify;
+}
+.rate {
+	height: 100px;
+	padding: 0 10px;
+	width: fit-content;
+	margin: 0 auto;
+}
+.rate:not(:checked) > input {
+	position:absolute;
+	top:-9999px;
+}
+.rate:not(:checked) > label {
+	float:right;
+	width:1em;
+	overflow:hidden;
+	white-space:nowrap;
+	cursor:pointer;
+	font-size:60px;
+	color:#ccc;
+}
+.rate:not(:checked) > label:before {
+	content: '★ ';
+}
+.rate > input:checked ~ label {
+	color: #f38121;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+	color: #d76c10;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+	color: #d76c10;
+}
+
+.Check {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+input[type="radio"] {
+	display: none;
+}
+.player input[type="radio"]:checked + label {
+	background-color: #f38121;
+	color: #fff;
+}
+.player {
+	height: 60px;
+}
+.player .playerName {
+	background-color: #d8d8d8;
+	width: 200px;
+	height: 100px;
+	padding: 10px;
+	font-size: 20px;
+	border-radius: 40px;
+	cursor: pointer;
+	margin: 0 10px;
+	transition: .2s;
+}
+.player .playerName:hover {
+	filter: drop-shadow(1px 2px 3px black);
+}
+
+.size-input{
+	border: 0px;
+	box-shadow: 1px 0px 8px 0px black;
+	border-radius: 10px;
+	height: 60px;
+	width: 100%;
+	outline: none;
+	font-size: 25px;
+}
+.input-text{
+	background: white;
+	margin-bottom: 20px;
+}
+
+.btn-submit {
+	color: white;
+	background: #f38121;
+	cursor: pointer;
+	transition: .2s;
+}
+.btn-submit:hover {
+	background: #ff9233;
+}
+
+.ToastContainer{
+	color: red;
+}
+
+@media only screen and (max-width: 394px) {
+	.rate:not(:checked) > label {
+		font-size:45px;
+	}
+	.player {
+			height: 45px;
+	}
+	.player .playerName {
+    padding: 5px;
+    font-size: 16px;
+    margin: 0;
+}
+}
